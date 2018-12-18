@@ -21,7 +21,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 $plugin = new \stdClass();
-$plugin->version    = 2018121701;
+$plugin->version    = 2018121801;
 $plugin->requires  = 2017050500; // Moodle 3.3
 $plugin->component  = 'local_qsection'; // Full name of the plugin (used for diagnostics)
 $plugin->maturity   = MATURITY_STABLE;

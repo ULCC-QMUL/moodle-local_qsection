@@ -55,10 +55,24 @@ function add_qreview($course, $qsection) {
         'submitbutton2' => 'Save and return to course',
     );
 
-    return add_moduleinfo((object) $templatesettings, $course);
+    $result = add_moduleinfo((object) $templatesettings, $course);
+    return $result->coursemodule;
 }
 
-function insert_result($section, $result) {
+function insert_result($section, $qmid) {
+    global $DB;
+    echo('insert_result here!');
+    $comment = "A coment placeholder. Please edit using the topic edit command.";
+    $iframe = "<iframe id='contentframe' height='600px' width='100%' src='../mod/lti/launch.php?id=$qmid&amp;triggerview=0' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='' style='height: 685px;'></iframe>";
+
+    $section = $DB->get_record('course_sections', array('id' => $section->id));
+    $section->name = get_string('section_name', 'local_qsection');
+    $section->summary = $comment.'<hr>'.$iframe;
+//    $section->summary = $comment;
+    $DB->update_record('course_sections', $section);
+}
+
+function insert_result0($section, $result) {
     global $DB;
     echo('insert_result here!');
     $comment = "A coment placeholder. Please edit using the topic edit command.";

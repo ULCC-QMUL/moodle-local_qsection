@@ -31,14 +31,14 @@ function local_qsection_extend_settings_navigation(settings_navigation $navigati
     if($context->contextlevel != CONTEXT_COURSE) {
         return;
     }
-
+/*
     if(!$lti_type = $DB->get_record('lti_types', array('tooldomain' => 'echo360.org.uk'))) {
         return;
     }
     if($ltirecord = $DB->get_record('lti', array('course' => $course->id, 'typeid' => $lti_type->id))){
         return;
     }
-
+*/
     $menutext = get_string('menu_entry', 'local_qsection');
     $url = '/local/qsection/create_qsection.php?courseid='.$course->id;
 

@@ -11,8 +11,8 @@ $string['pluginname'] = 'Qsection';
 $string['profilename'] = 'Qsection';
 $string['login_required'] = 'You need to log in as site admin to use this page!';
 
-$string['confirm_creation'] = 'Are you sure that you want to create a Q-Review topic?';
-$string['menu_entry'] = 'Create Q-Review topic';
+$string['confirm_creation'] = 'Are you sure that you want to create a Q-Review section?';
+$string['menu_entry'] = 'Create Q-Review section';
 $string['section_name'] = 'Q-Review';
 $string['module_name'] = 'Q-Review autocreated';
 

@@ -44,6 +44,6 @@ function local_qsection_extend_settings_navigation(settings_navigation $navigati
 
     $coursenode = $navigation->get('courseadmin');
     if ($coursenode) {
-        $coursenode->add($menutext, $url, navigation_node::TYPE_SETTING, 'qsection', 'qsection_creator', new pix_icon('i/up', ''));
+        $coursenode->add($menutext, $url, navigation_node::TYPE_SETTING, 'qsection', 'qsection_creator', new pix_icon('t/add', ''));
     }
 }

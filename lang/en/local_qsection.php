@@ -16,3 +16,5 @@ $string['menu_entry'] = 'Create Q-Review section';
 $string['section_name'] = 'Q-Review';
 $string['module_name'] = 'Q-Review autocreated';
 
+$string['commentplaceholder'] = 'Placeholder comment on top of Q-Reviev topic';
+$string['commentplaceholder_desc'] = 'Enter a common pkaceholder to appear on top of newly generated Q-Review topics. Leave empty for no placeholder.';

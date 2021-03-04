@@ -6,7 +6,7 @@
  * Time: 10:37
  */
 global $PAGE;
-$PAGE->requires->js_call_amd('local_qsection/create_qsection','init', array());
+//$PAGE->requires->js_call_amd('local_qsection/create_qsection','init', array());
 
 
 /*
